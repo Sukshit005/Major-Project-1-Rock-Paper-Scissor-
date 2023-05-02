@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESULT</title>
+    <link rel="stylesheet" href="csspage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="load2()">
+    <div id="div-img">
+      <div id="div-div-img"></div>
+    </div>
+
+    <h1 id="index2-h1">HURRAY!!</h1>
+
+    <h2 id="index2-h2">YOU WON THE GAME</h2>
+
+    <button id="index2-button1" onclick="new_page()">PLAY AGAIN</button>
+
+    <button id="rules2" onclick="rules2()">RULES</button>
+
+    <div id="popup-container">
+      <button id="close-button" onclick="norules2()">&times;</button>
+      <h2 id="popup-h2">GAME RULES</h2>
+      <ul id="popup-ul">
+        <li class="popup-li">
+          Rock beats scissors, scissors beat paper, and paper beats rock.
+        </li>
+        <li class="popup-li">
+          Agree ahead of time whether you wll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li class="popup-li">
+          Use rock, paper, scissors to settle minor decisions or simply play to
+          pass the time
+        </li>
+        <li class="popup-li">
+          If both players lay down the same hand, each player lays down another
+          hand
+        </li>
+      </ul>
+    </div>
+    <script src="jspage.js"></script>
+  </body>
+</html>

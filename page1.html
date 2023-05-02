@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="csspage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body onload="load()" >
+    <div id="headder">
+        <div id="text1">
+            <h1 class="h1-text1">ROCK</h1>
+            <h1 class="h1-text1">PAPER</h1>
+            <h1 class="h1-text1">SCISSORS</h1>
+        </div>
+        <div id="comp-text">
+            <h4 class="h4-text11">COMPUTER</h4>
+            <h4 class="h4-text12">SCORE</h4>
+            <h1 class="h1-text2" id="comp-score">0</h1>
+        </div>
+        <div id="user-text">
+            <h4 class="h4-text11">YOUR</h4>
+            <h4 class="h4-text12">SCORE</h4>
+            <h1 class="h1-text2" id="user-score">0</h1>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="bottom1">
+            <div id="bottom1-img1">
+                <Button id="button-1" onclick="rock()"></Button>
+            </div>
+            <div id="bottom1-img2">
+                <button id="button-2" onclick="paper()"></button>
+            </div>
+            <div id="bottom1-img3">
+                <button id="button-3" onclick="scissor()"></button>
+            </div>
+        </div>
+
+        <div id="bottom2">
+            <div id="bottom2-div1">
+                <h3 id="bottom2-div1-text">YOU PICKED</h2>
+                    <div id="bottom2-div1-img1">
+
+                    </div>
+            </div>
+            <div id="bottom2-div2">
+                <h2 class="bottom2-div2-text">YOU WIN</h2>
+                <h3 class="bottom2-div2-text">AGAINST PC</h3>
+                <button id="bottom2-div2-button" onClick="window.location.reload()">PLAY AGAIN</button>
+            </div>
+            <div id="bottom2-div3">
+                <h3 id="bottom2-div3-text">PC PICKED</h2>
+                    <div id="bottom2-div3-img1">
+
+                    </div>
+            </div>
+        </div>
+
+        <div id="bottom3">
+            <div id="bottom3-div1">
+                <h3 id="bottom3-div1-h3">YOU PICKED</h2>
+                    <div id="bottom3-div1-div1">
+
+                    </div>
+            </div>
+            <div id="bottom3-div2">
+                <h2 class="bottom3-div2-text">YOU LOST</h2>
+                <h3 class="bottom3-div2-text">AGAINST PC</h3>
+                <button id="bottom3-div2-button" onClick="window.location.reload()">PLAY AGAIN</button>
+            </div>
+            <div id="bottom3-div3">
+                <h3 id="bottom3-div3-h3">PC PICKED</h2>
+                    <div id="bottom3-div3-div1">
+
+                    </div>
+            </div>
+        </div>
+
+        <div id="bottom4">
+            <div id="bottom4-div1">
+                <h3 id="bottom4-div1-h3">YOU PICKED</h2>
+                    <div id="bottom4-div1-div1">
+
+                    </div>
+            </div>
+            <div id="bottom4-div2">
+                <h2 class="bottom4-div2-text">TIE UP</h2>
+                <button id="bottom4-div2-button" onClick="window.location.reload()">PLAY AGAIN</button>
+            </div>
+            <div id="bottom4-div3">
+                <h3 id="bottom4-div3-h3">PC PICKED</h2>
+                    <div id="bottom4-div3-div1">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="rules" onclick="rules()">RULES</button>
+        <button id="next" onclick="next()">NEXT</button>
+    </div>
+    
+    <div id="popup-container">
+        <button id="close-button" onclick="norules()">&times;</button>
+        <h2 id="popup-h2">GAME RULES</h2>
+        <ul id="popup-ul">
+            <li class="popup-li">Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li class="popup-li">Agree ahead of time whether you wll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                scissors.”</li>
+            <li class="popup-li">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li class="popup-li">If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+    </div>
+    
+<script src="jspage.js"></script>
+</body>
+
+</html>
