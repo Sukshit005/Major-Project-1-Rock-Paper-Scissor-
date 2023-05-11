@@ -273,6 +273,6 @@ function next()
 function new_page()
     {
 
-       window.open("page1.html","_self");
+       window.open("index.html","_self");
       
     }
